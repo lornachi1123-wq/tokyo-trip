@@ -158,35 +158,35 @@
         </section>
 
         <section id="info" class="tab-content">
-            <h2 class="text-lg font-bold mb-4 italic text-muji-brown"><i class="fa-solid fa-phone-flip mr-2"></i>緊急聯絡資訊</h2>
-            <div class="muji-card p-4 mb-6 space-y-3 text-sm">
-                <div class="flex justify-between items-center border-b border-muji-sand pb-2">
-                    <span class="text-muji-dark">報警 (警察局)</span>
-                    <a href="tel:110" class="font-bold text-muji-accent">110</a>
+            <h2 class="text-lg font-bold mb-4 italic text-muji-brown"><i class="fa-solid fa-calendar-check mr-2"></i>2025 年末旅遊重要資訊</h2>
+            <div class="muji-card p-4 mb-6 space-y-4 text-xs leading-relaxed">
+                <div class="bg-red-50 p-3 rounded-lg border border-red-100 text-red-700">
+                    <h4 class="font-bold mb-1">⚠️ 年末年始休業提醒</h4>
+                    <p>日本新年期間 (12/29-1/3) 部分小店與市場會公休。連鎖百貨 12/31 通常提早至 18:00 關門，1/1 全面休業，建議購物儘量安排在 12/30 前。</p>
                 </div>
-                <div class="flex justify-between items-center border-b border-muji-sand pb-2">
-                    <span class="text-muji-dark">火警、救護車</span>
-                    <a href="tel:119" class="font-bold text-muji-accent">119</a>
+                <div>
+                    <h4 class="font-bold text-muji-accent mb-1">1. 交通卡與支付</h4>
+                    <p class="text-gray-500">推薦將 Suica/Pasmo 加入 iPhone 錢包，儲值與搭車最便利。多數大型商場支援 Apple Pay 與信用卡，小店則需備足日圓現金。</p>
                 </div>
-                <div class="flex justify-between items-center">
-                    <span class="text-muji-dark text-[12px]">台北駐日經濟文化代表處</span>
-                    <a href="tel:0332807811" class="font-bold text-muji-accent">03-3280-7811</a>
+                <div>
+                    <h4 class="font-bold text-muji-accent mb-1">2. 購物退稅須知</h4>
+                    <p class="text-gray-500">免稅門檻為當日單店消費滿 ¥5,000 (未稅)。必須出示護照正本，且消耗品退稅後會被封袋，不可在境內拆封使用。</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-muji-accent mb-1">3. 行李寄放與氣候</h4>
+                    <p class="text-gray-500">年末車站置物櫃極易爆滿。建議利用飯店寄放或預約 Ecbo Cloak。河口湖氣溫偏低，保暖層需穿足，戶外活動建議貼暖暖包。</p>
                 </div>
             </div>
 
-            <h2 class="text-lg font-bold mb-4 italic text-muji-brown"><i class="fa-solid fa-circle-exclamation mr-2"></i>旅遊禁忌與提醒</h2>
+            <h2 class="text-lg font-bold mb-4 italic text-muji-brown"><i class="fa-solid fa-circle-exclamation mr-2"></i>在地禮儀規範</h2>
             <div class="muji-card p-4 space-y-4 text-xs leading-relaxed">
                 <div>
-                    <h4 class="font-bold text-muji-accent mb-1">1. 出入境違禁品</h4>
-                    <p class="text-gray-500">絕對不可攜帶肉製品（泡麵含肉塊、肉乾、含肉鬆零食）入境。返台亦同，違者罰鍰 NT$20萬起。</p>
+                    <h4 class="font-bold text-muji-accent mb-1">1. 電扶梯與電車</h4>
+                    <p class="text-gray-500">東京習慣靠左站立。電車內請保持安靜，手機設為靜音，避免通話以免打擾他人。</p>
                 </div>
                 <div>
-                    <h4 class="font-bold text-muji-accent mb-1">2. 禮儀規範</h4>
-                    <p class="text-gray-500">東京電扶梯習慣靠左站立，右側通行。電車內請勿通話，並將手機設為靜音。</p>
-                </div>
-                <div>
-                    <h4 class="font-bold text-muji-accent mb-1">3. 店家服務</h4>
-                    <p class="text-gray-500">結帳時請將現金或卡片放在收銀台的小托盤 (Tray) 上。多數店家不收小費。</p>
+                    <h4 class="font-bold text-muji-accent mb-1">2. 現金結帳方式</h4>
+                    <p class="text-gray-500">結帳時，請將現金或信用卡放置在櫃檯的小托盤上，店員找零後會雙手遞還。</p>
                 </div>
             </div>
         </section>
@@ -213,7 +213,7 @@
     </nav>
 
     <script>
-        // --- 行程資料 (保持一致) ---
+        // --- 行程資料 ---
         const itinerary = {
             1: { title: "12/25 (三) 抵達東京", loc: "東京", events: [
                 { time: "18:30", text: "抵達成田機場 (NRT)", icon: "plane-arrival" },
@@ -227,11 +227,14 @@
                 { time: "21:00", text: "煙火秀與回程", icon: "fireworks" },
                 { time: "22:30", text: "回住宿休息", icon: "moon" }
             ]},
-            3: { title: "12/27 (五) 淺草與銀座購物", loc: "東京", events: [
-                { time: "09:00", text: "出發 ➔ 淺草", icon: "camera", routeDetail: "押上 (都營淺草線) ➔ 淺草站 A4 出口 (出站即雷門)", tips: { go: "10:00 淺草愛和服3號店" } },
-                { time: "13:00", text: "午餐：淺草今半 (壽喜燒)", icon: "utensils" },
-                { time: "14:30", text: "小綱神社", icon: "shrine", routeDetail: "淺草線 ➔ 人形町/日本橋" },
-                { time: "16:00", text: "銀座購物大集合", icon: "bag-shopping", tips: { shop: "Loft, MUJI旗艦店, Uniqlo東京, noix費南雪(三越B2F)", eat: "19:30 花山うどん (拿號碼牌)" } }
+            3: { title: "12/27 (五) 淺草和服與銀座購物", loc: "東京", events: [
+                { time: "09:00", text: "出發 ➔ 淺草", icon: "train", routeDetail: "押上站 → 都營淺草線（往西馬込）→ 淺草站 A4 出口 → 出站雷門" },
+                { time: "10:00", text: "淺草愛和服 3 號店", icon: "camera", tips: { note: "請準時抵達進行和服體驗。" } },
+                { time: "13:00", text: "午餐：淺草今半 壽喜燒", icon: "utensils", tips: { note: "步行抵達，需事先預約。" } },
+                { time: "14:30", text: "小綱神社 (強運厄除)", icon: "shrine", routeDetail: "淺草線 → 人形町/日本橋站" },
+                { time: "16:00", text: "銀座購物大集合", icon: "bag-shopping", tips: { shop: "Loft, MUJI旗艦店, Uniqlo東京, 3COINS", eat: "noix de beurre 費南雪 (三越 B2F)" } },
+                { time: "19:30", text: "晚餐：花山うどん (鬼ひも川)", icon: "fire-burner", tips: { eat: "需排隊拿號碼牌，或改吃一蘭拉麵。" } },
+                { time: "21:30", text: "回押上住宿休息", icon: "moon" }
             ]},
             4: { title: "12/28 (六) 出發富士山", loc: "河口湖", events: [
                 { time: "08:30", text: "行李寄放新宿站", icon: "suitcase", tips: { note: "僅攜帶輕便行李前往河口湖。" } },
@@ -249,10 +252,14 @@
                 { time: "18:30", text: "晚餐：燒肉 Bondz", icon: "fire-burner" },
                 { time: "21:30", text: "Check-in 新小岩住宿", icon: "hotel", location: "江戸川区松島4-45-5" }
             ]},
-            6: { title: "12/30 (一) 上野與澀谷", loc: "東京", events: [
-                { time: "10:00", text: "上野阿美橫丁", icon: "cart-shopping", tips: { shop: "二木之菓子、松本清、唐吉訶德", eat: "山家炸豬排" } },
-                { time: "14:00", text: "澀谷 Shibuya Sky", icon: "mountain-sun", tips: { go: "藍瓶咖啡、哥吉拉商店", eat: "晚餐：鰻富士 (炭焼 うな富士)" } },
-                { time: "22:00", text: "回新小岩休息", icon: "moon" }
+            6: { title: "12/30 (一) 購物、美食與澀谷夜景", loc: "東京", events: [
+                { time: "09:00", text: "出發 ➔ 10:00 到上野", icon: "cart-shopping", tips: { shop: "二木之菓子 (伴手禮)、松本清、唐吉訶德" } },
+                { time: "12:30", text: "午餐：山家 (Yamabe) 炸豬排-御徒町店/上野店", icon: "utensils" },
+                { time: "12:30", text: "藍瓶子 Blue Bottle Coffee Shibuya Cafe", icon: "coffee" },
+                { time: "14:00", text: "Shibuya Sky (澀谷天空) 或 KITTE 屋頂花園", icon: "mountain-sun" },
+                { time: "18:00", text: "澀谷周邊購物：Scramble Square / Hikarie", icon: "bag-shopping", tips: { go: "Godzilla Store Shibuya (哥吉拉)", note: "連結：https://share.google/4NMDkeuC5v09335AA" } },
+                { time: "20:00", text: "晚餐：鰻富士 (炭焼 うな富士)", icon: "utensils" },
+                { time: "22:00", text: "回新小岩住宿", icon: "moon" }
             ]},
             7: { title: "12/31 (二) 免稅店與回家", loc: "東京", events: [
                 { time: "11:00", text: "退房 / 新小岩早午餐", icon: "coffee" },
@@ -307,7 +314,6 @@
 
             let html = `<h3 class="text-sm font-bold text-muji-accent mb-6 tracking-widest uppercase">${data.title}</h3>`;
             data.events.forEach(ev => {
-                // 產生 Google Map 搜尋連結
                 const searchLabel = ev.location ? ev.location : ev.text;
                 const mapLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(searchLabel)}`;
 
@@ -327,9 +333,9 @@
                                 ${ev.location ? `<p class="text-[10px] text-gray-400 mt-2"><i class="fa-solid fa-location-dot mr-1"></i>${ev.location}</p>` : ''}
                                 ${ev.tips ? `
                                 <details class="mt-3 border-t border-muji-sand/30 pt-2">
-                                    <summary class="text-[10px] text-muji-accent font-bold cursor-pointer flex items-center justify-between">景點與美食筆記 <i class="fa-solid fa-chevron-down text-[8px]"></i></summary>
+                                    <summary class="text-[10px] text-muji-accent font-bold cursor-pointer flex items-center justify-between">筆記與提示 <i class="fa-solid fa-chevron-down text-[8px]"></i></summary>
                                     <div class="mt-2 space-y-2 text-[10px] text-gray-500 bg-muji-beige/30 p-2 rounded-lg">
-                                        ${ev.tips.go ? `<p>📍 <strong>必去：</strong>${ev.tips.go}</p>` : ''}
+                                        ${ev.tips.go ? `<p>📍 <strong>推薦：</strong>${ev.tips.go}</p>` : ''}
                                         ${ev.tips.eat ? `<p>🍱 <strong>必吃：</strong>${ev.tips.eat}</p>` : ''}
                                         ${ev.tips.shop ? `<p>🛍️ <strong>必逛：</strong>${ev.tips.shop}</p>` : ''}
                                         ${ev.tips.note ? `<p>💡 <strong>提醒：</strong>${ev.tips.note}</p>` : ''}
@@ -343,7 +349,6 @@
             content.innerHTML = html;
         }
 
-        // --- WALLET 邏輯 ---
         function calculateQuick() {
             const input = document.getElementById('calc-input');
             try {
@@ -422,7 +427,6 @@
             renderExpenses();
         }
 
-        // --- LISTS 邏輯 ---
         function renderChecklist() {
             const container = document.getElementById('checklist');
             container.innerHTML = checkData.map((item, idx) => `
